@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Date: 2026-04-14
+  Changes:
+    - Updated for Factorio 2.0 by switching offshore pump placement logic to tile_buildability_rules.
+    - Kept fallback support for older Factorio versions that still use adjacent_tile_collision_* fields.
+
+---------------------------------------------------------------------------------------------------
 Version: 1.1.0
 Date: 2023-04-08
   Features:
