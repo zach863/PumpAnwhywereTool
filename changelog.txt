@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.1
+Date: 2026-04-14
+  Fixes:
+    - Removed adjacent tile collision checks so offshore pumps can be placed on non-water tiles again.
+
+---------------------------------------------------------------------------------------------------
 Version: 1.1.0
 Date: 2023-04-08
   Features:
