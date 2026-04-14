@@ -1,7 +1,9 @@
-if data.raw["offshore-pump"] and data.raw["offshore-pump"]["seafloor-pump"] then
-	data.raw["offshore-pump"]["seafloor-pump"].adjacent_tile_collision_test = { "ground-tile", "water-tile", "object-layer" }
-	data.raw["offshore-pump"]["seafloor-pump"].adjacent_tile_collision_mask = nil
-	data.raw["offshore-pump"]["seafloor-pump"].placeable_position_visualization = nil
-	data.raw["offshore-pump"]["seafloor-pump"].flags = {"placeable-neutral", "player-creation"}
-	data.raw["offshore-pump"]["seafloor-pump"].adjacent_tile_collision_box = { { -0.5, -0.25}, {0.5, 0.25} }
+local seafloor_pump = data.raw["offshore-pump"] and data.raw["offshore-pump"]["seafloor-pump"]
+
+if seafloor_pump then
+	seafloor_pump.adjacent_tile_collision_test = nil
+	seafloor_pump.adjacent_tile_collision_mask = nil
+	seafloor_pump.adjacent_tile_collision_box = nil
+	seafloor_pump.placeable_position_visualization = nil
+	seafloor_pump.flags = {"placeable-neutral", "player-creation"}
 end
